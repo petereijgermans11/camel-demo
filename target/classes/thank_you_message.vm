@@ -1,0 +1,14 @@
+Dear customer,
+
+Thank you for ordering ${body.numberOfItems} piece(s) of ${body.orderId} on ${body.dateTime}.
+
+The items will be delivered to:
+
+Zip: ${body.address.zip}
+Nr.: ${body.address.houseNumber} ${body.address.houseNumberAddition}
+
+This is an automated email, please do not reply.
+
+Kind regards,
+
+IvoNet

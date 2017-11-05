@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<order>
+    <orderLine>
+        <address>
+            <houseNumber>10</houseNumber>
+            <houseNumberAddition>A</houseNumberAddition>
+            <zip>5261BH</zip>
+        </address>
+        <dateTime>2017-07-02T13:03:34</dateTime>
+        <numberOfItems>1</numberOfItems>
+        <orderId>1000000001</orderId>
+    </orderLine>
+    <orderLine>
+        <address>
+            <houseNumber>69</houseNumber>
+            <houseNumberAddition>A</houseNumberAddition>
+            <zip>1000AA</zip>
+        </address>
+        <dateTime>2017-07-02T15:05:01</dateTime>
+        <numberOfItems>3</numberOfItems>
+        <orderId>1000000002</orderId>
+    </orderLine>
+</order>

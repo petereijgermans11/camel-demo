@@ -1,0 +1,15 @@
+
+ftp:
+  host: 192.168.100.100
+  port: 21
+  user:
+    name: user
+    password: secret
+  admin:
+    name: admin
+    password: secret
+  passiveMode: false
+
+spring:
+  activemq:
+    broker-url: tcp://192.168.100.100:61616

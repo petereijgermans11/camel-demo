@@ -1,0 +1,54 @@
+version: '2'
+
+services:
+  ftp:
+    image: ivonet/ftp
+    ports:
+    - "11021:21"
+    - "30000-30009:30000-30009"
+    volumes:
+    - ./docker/ftp/passwd:/etc/pure-ftpd/passwd
+    - ./test-data/ftp:/home/ftpusers
+
+#  mysql:
+#    image: ivonet/mysql
+#    volumes:
+#      - ./docker/mysql/setup:/docker-entrypoint-initdb.d
+#      - ./target/mysql-sql-folder:/testdata
+#      - mysql-data:/var/lib/mysql
+#    ports:
+#      - "3306:3306"
+#    environment:
+#        - MYSQL_ROOT_PASSWORD=secret
+
+#  phpmyadmin:
+#    image: phpmyadmin/phpmyadmin:4.6.4-1
+#    ports:
+#      - "8888:80"
+#    links:
+#      - mysql:mysql
+#    environment:
+#      - MYSQL_USERNAME=root
+#      - MYSQL_ROOT_PASSWORD=secret
+#      - PMA_HOST=mysql
+#    depends_on:
+#      - mysql
+
+  activemq:
+    image: ivonet/activemq
+    ports:
+    - "8161:8161"
+    - "61616:61616"
+    - "61613:61613"
+    environment:
+    - ACTIVEMQ_MIN_MEMORY=512
+    - ACTIVEMQ_MAX_MEMORY=2048
+    - ACTIVEMQ_ENABLED_AUTH=true
+    - ACTIVEMQ_ADMIN_LOGIN=admin
+    - ACTIVEMQ_ADMIN_PASSWORD=secret
+    volumes:
+    - ./target/activemq-log:/var/log/activemq
+
+#volumes:
+#  mysql-data:
+#    driver: local

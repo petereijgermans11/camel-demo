@@ -1,0 +1,46 @@
+{
+  "hints": [],
+  "groups": [],
+  "properties": [
+    {
+      "name": "ftp.admin.name",
+      "description": "The name of an ftp user.",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "ftp.admin.password",
+      "description": "The password of the ftp.admin.name.",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "ftp.host",
+      "description": "The hostname of the ftp server.",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "ftp.port",
+      "description": "The Port the ftp server is running on.",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "ftp.user.name",
+      "description": "The name of an ftp user.",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "ftp.user.password",
+      "description": "The password of the ftp.user.name.",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "project.base.folder",
+      "description": "Fully qualified path to the location of this project.",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "route.data.location",
+      "description": "This location should point (fully qualified) to the folder in this project called test-data.",
+      "type": "java.lang.String"
+    }
+  ]
+}
